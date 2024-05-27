@@ -1,22 +1,9 @@
 
--- Set <space> as the leader key
--- See `:help mapleader`
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-vim.opt.number = true -- Enable line number
-vim.opt.relativenumber = true 
-vim.g.have_nerd_font = true
--- vim.opt.showmode = false -- Don't show mode, since it's already in status line
+-- load necessary files
+require("settings")
+require("keybindings")
 
--- Sync clipboard between OS and Neovim.
---  See `:help 'clipboard'`
-vim.opt.clipboard = 'unnamedplus'
-vim.opt.breakindent = true
--- Save undo history
-vim.opt.undofile = true
--- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
